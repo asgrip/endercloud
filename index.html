@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
+    <script>document.onreadystatechange=function(){"complete"!==document.readyState?null:(setTimeout((function(){document.getElementById("discount").style.display="flex",document.body.style.overflow="hidden"}),5e3))};function copyDiscountCode(){var t=document.getElementById("discount-code").innerText,e=document.createElement("textarea");e.value=t,document.body.appendChild(e),e.select(),document.execCommand("copy"),document.body.removeChild(e),alert("Discount code copied to clipboard: "+t)}document.onkeydown=function(t){27===((t=t||window.event).which||t.keyCode)&&(document.body.style.overflow='auto',document.getElementById("discount").style.display="none")};</script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> EnderCloud | Hosting</title>
@@ -27,6 +28,7 @@
     
 </head>
 <body>
+    <div class=discount-popup-wrapper id=discount><div class=discount-popup><img alt=""class=cross-icon loading=eager src=/assets/cross.svg onclick='document.body.style.overflow="auto",document.getElementById("discount").style.display="none"'><h1 class=discount-h>Exclusive Coupon code!</h1><div class=content-discount><p class=discount-p>Unlock a 10% discount on your first purchase via using ENDERCLOUD10 code during checkout.</div><a style="margin-top: 15px;" class="btn radius-btn"id=discount-code onclick=copyDiscountCode()>ENDERCLOUD10</a></div></div>
     <!-- ? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
